@@ -1,10 +1,10 @@
-#!/usr/bin/python3.6.3
+#!/usr/bin/python3
 
 import os, sys, traceback
 try:
     from wsgiref.handlers import CGIHandler
     from werkzeug.debug import DebuggedApplication
-
+    from alawite import app
     if 'PATH_INFO' not in os.environ:
         os.environ['PATH_INFO'] = ''
 
